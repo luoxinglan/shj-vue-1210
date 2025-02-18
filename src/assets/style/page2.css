@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.leak {
+    width: 100%;
+    height: 100%;
+    background: #161b24;
+}
+
+.vulnerability-detection-database {
+    width: 100%;
+    background: #161b24;
+}
+
+.vulnerability-detection-database-title {
+    width: 100%;
+    height: 35px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.vulnerability-detection-database-content {
+    width: 100%;
+    display: flex;
+}
+
+.exploit-mining-platform {
+    width: 100%;
+    background: #161b24;
+}
+
+.exploit-mining-platform-title {
+    width: 100%;
+    height: 35px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.exploit-mining-platform-content {
+    width: 100%;
+    height: 260px;
+    display: flex;
+}
+
+.exploit-mining-platform-completeness-gimmick {
+    width: 25%;
+}
+
+
+.gimmick {
+    height: 40px;
+    font-size: 34px;
+    margin-top: 20px;
+    text-align: center;
+    background: -webkit-linear-gradient(135deg,
+            #0eaf6d,
+            #ff6ac6 25%,
+            #147b96 50%,
+            #e6d205 55%,
+            #2cc4e0 60%,
+            #8b2ce0 80%,
+            #ff6384 95%,
+            #08dfb4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: flowCss 10s infinite linear;
+}
+
+@keyframes flowCss {
+    0% {
+        /* 移动背景位置 */
+        background-position: 0 0;
+    }
+
+    50% {
+        /* 移动背景位置 */
+        background-position: -400% 0;
+    }
+
+    100% {
+        background-position: -800% 0;
+    }
+}
+
+.gimmick:hover {
+    -webkit-animation: flowCss 5s infinite linear;
+}
+
+.exploit-mining-platform-completeness-gimmick .text {
+    width: 100%;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 18px;
+    color: #838588;
+}
+
+.exploit-mining-platform-button {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around
+}
+
+.exploit-mining-platform-tested {
+    width: 200px;
+    height: 30px;
+    color: #b8d5e6;
+    font-size: 14px;
+    font-weight: 700;
+    background: #161b24;
+    background-image: url("../image/routerbutton.png");
+    background-size: 100% 100%;
+    margin: 0px 20px;
+}
+
+.exploit-mining-platform-completeness {
+    width: 20%;
+}
+
+.exploit-mining-platform-completeness-progress {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.exploit-mining-platform-completeness-text {
+    width: 260px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.exploit-mining-platform-completeness-button {
+    width: 200px;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -20px left 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    margin-top: 10px;
+    margin-left: 63px;
+}
+
+.vulnerability-logs {
+    width: 25%;
+    height: 210px;
+}
+
+.vulnerability-logs h3 {
+    color: #c8c8c9;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.vulnerability-logs-text {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.vulnerability-logs-text p {
+    animation: up 10s linear infinite;
+    animation-fill-mode: forwards;
+    font-size: 14px;
+    color: #838588;
+    -webkit-animation: up 10s linear infinite;
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0px, 10px);
+        -webkit-transform: translate(0px, 10px);
+        -moz-transform: translate(0px, 10px);
+        -ms-transform: translate(0px, 10px);
+        -o-transform: translate(0px, 10px);
+    }
+
+    50% {
+        transform: translate(0px, -80px);
+        -webkit-transform: translate(0px, -80px);
+        -moz-transform: translate(0px, -80px);
+        -ms-transform: translate(0px, -80px);
+        -o-transform: translate(0px, -80px);
+    }
+
+    100% {
+        transform: translate(0px, -150px);
+        -webkit-transform: translate(0px, -150px);
+        -moz-transform: translate(0px, -150px);
+        -ms-transform: translate(0px, -150px);
+        -o-transform: translate(0px, -150px);
+    }
+}
+
+.vulnerability-detection-database-table {
+    width: 1400px;
+    height: 150px;
+}
+
+.vulnerability-data-table {
+    width: 1400px;
+    height: 30px;
+    background: #161b24;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.vulnerability-detection-database-table thead {
+    width: 1400px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    background: #11151c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 14px;
+}
+
+.vulnerability-detection-database-table thead tr {
+    width: 100%;
+    height: 30px;
+}
+
+.vulnerability-data-table-title {
+    width: 200px;
+    height: 30px;
+}
+
+.vulnerability-data-table-title-text {
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.vulnerability-warp {
+    width: 1400px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.vulnerability-table-content-box {
+    width: 1400px;
+    height: 140px;
+    overflow: auto;
+}
+
+.vulnerability-table-content {
+    width: 1400px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.vulnerability-table-content li:nth-child(even) {
+    background: #252a32;
+}
+
+.vulnerability-table-content li {
+    width: 1400px;
+    height: 30px;
+    display: flex;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 20px;
+}
+
+.vulnerability-table-content li:hover {
+    background: #313946;
+}
+
+.vulnerability-table-content li span {
+    display: block;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.vulnerability-table-content li span i {
+    width: 200px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vulnerability-detection-database-upload {
+    width: 300px;
+    height: 180px;
+}
+
+.vulnerability-upload {
+    width: 200px;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -20px left 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    margin-top: 20px;
+}
+
+.vulnerability-upload:hover {
+    width: 200px;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2over.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -20px left 0px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    margin-top: 20px;
+}
+
+.data-results {
+    width: 100%;
+    background: #161b24;
+}
+
+.data-results-title {
+    width: 100%;
+    height: 35px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.data-results-content {
+    display: flex;
+}
+
+.leak-video {
+    width: 30%;
+    height: 230px;
+    position: relative;
+}
+
+.leak-video-select {
+    width: 100%;
+    height: 20px;
+    color: #ccc;
+    outline: none;
+    background-color: #161b24;
+    appearance: none;
+    cursor: pointer;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    top: 8px;
+    z-index: 999;
+}
+
+.leak-video video {
+    width: 100%;
+    height: 215px;
+    position: absolute;
+    top: 30px;
+}
+
+.leak-video-button {
+    width: 100px;
+    height: 25px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 12px;
+    left: 208px;
+}
+
+.leak-dialog {
+    background: #161b24;
+}
+
+.leak-dialog-video {
+    padding: 0px 50px;
+}
+
+.leak-dialog div {
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.leak-dialog div h2 {
+    margin-bottom: 20px;
+}
+
+.leak-dialog div h4 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.leak-dialog div p {
+    text-indent: 26px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.leak-dialog div img {
+    width: 500px;
+    margin: 10px 0;
+}

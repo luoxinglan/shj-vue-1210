@@ -1,0 +1,231 @@
+.uninhabited {
+    width: 100%;
+    height: 100%;
+}
+
+.uninhabited-top {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.uninhabited-top-left {
+    width: 400px;
+    height: 500px;
+}
+
+.vulnerability-classification {
+    width: 400px;
+    height: 240px;
+
+}
+
+.vulnerability-classification-title {
+    width: 400px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+}
+
+.vulnerability-classification-title p {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.exploit-mining {
+    width: 400px;
+    height: 240px;
+    margin-top: 20px;
+}
+
+.exploit-mining-title {
+    width: 400px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+}
+
+.exploit-mining p {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.exploit-mining-banner {
+    width: 400px;
+    height: 205px;
+    overflow: hidden;
+}
+
+
+.exploit-mining-banner img {
+    width: 400px;
+    height: 205px;
+}
+
+.uninhabited-top-middle {
+    width: 800px;
+    height: 500px;
+}
+
+.uninhabited-top-middle video {
+    width: 800px;
+    height: 450px;
+    margin: 25px 0px;
+}
+
+.uninhabited-top-right {
+    width: 400px;
+    height: 500px;
+}
+
+.perceptual-testing {
+    width: 400px;
+    height: 240px;
+}
+
+.perceptual-testing-title {
+    width: 400px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+}
+
+.perceptual-testing-title p {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.regulatory-testing {
+    width: 400px;
+    height: 240px;
+    margin-top: 20px;
+}
+
+.regulatory-testing-title {
+    width: 400px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+}
+
+.regulatory-testing-title p {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.uninhabited-bottom {
+    width: 100%;
+    height: 260px;
+
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vulnerability-rating {
+    width: 400px;
+    height: 240px;
+
+}
+
+.vulnerability-rating-title {
+    width: 400px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+}
+
+.vulnerability-rating-title p {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.brand-support {
+    width: 800px;
+    height: 240px;
+}
+
+.brand-support-title {
+    width: 800px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+    background-position: 0px -15px;
+}
+
+.brand-support-title p {
+    width: 800px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.brand-support-content {
+    width: 800px;
+    height: 205px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-support-content li {
+    width: 155px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.brand-support-content li img {
+    width: 155px;
+    height: 100px;
+}
+
+.combine {
+    width: 400px;
+    height: 240px;
+}
+
+.combine-title {
+    width: 400px;
+    height: 35px;
+    background: url("../image/uninhabited-title.png");
+    background-size: cover;
+}
+
+.combine-title p {
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 60px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.combine-title img {
+    width: 400px;
+    height: 220px;
+}

@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.regulation {
+    width: 100%;
+    height: 100%;
+    background: #161b24;
+}
+
+.overview {
+    width: 100%;
+    background: #161b24;
+}
+
+.overview-title {
+    width: 100%;
+    height: 35px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.overview-data {
+    width: 100%;
+    background: #161b24;
+    display: flex;
+}
+
+.overview-data-content {
+    width: 83%;
+}
+
+.overview-data-table {
+    width: 1350px;
+    height: 30px;
+    background: #161b24;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-data-table thead {
+    width: 1350px;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background: #11151c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.overview-data-table thead tr {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.overview-data-table-title {
+    width: 90px;
+    height: 30px;
+}
+
+.overview-data-table-title-text {
+    width: 90px;
+    height: 30px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+}
+
+.seamless-warp-box {
+    width: 1350px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.seamless-warp {
+    width: 1350px;
+    height: 150px;
+    /* overflow: hidden; */
+}
+
+.table-content {
+    width: 1350px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.table-content li:nth-child(even) {
+    background: #252a32;
+}
+
+.table-content li {
+    width: 1350px;
+    height: 30px;
+    display: flex;
+    line-height: 30px;
+}
+
+.table-content li:hover {
+    background: #313946;
+}
+
+.table-content li span {
+    display: block;
+    width: 90px;
+    height: 30px;
+}
+
+.outcome {
+    color: #cfa10a;
+}
+
+.overview-data-chart {
+    width: 280px;
+    height: 180px;
+}
+
+.progress {
+    width: 100%;
+    background: #161b24;
+}
+
+.progress-title {
+    width: 100%;
+    height: 35px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.progress-form {
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.progress-form-box {
+    width: calc(100% - 200px);
+    height: 220px;
+}
+
+.progress-form-select-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.progress-form-select {
+    width: 200px;
+    height: 70px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.progress-form-select::-webkit-scrollbar {
+    display: none;
+}
+
+/* select标题 */
+.progress-form-select-title {
+    width: 100%;
+    height: 35px;
+    color: #bad5e4;
+    background-image: url("../image/pagebutton.png");
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: 8px 0;
+    background-color: #161b24;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.select {
+    width: 90%;
+    height: 20px;
+    color: #fff;
+    /*清除select聚焦时候的边框颜色*/
+    outline: none;
+    line-height: 20px;
+    background-color: #161b24;
+    appearance: none;
+    cursor: pointer;
+    margin-left: 5%;
+    font-size: 12px;
+}
+
+.select-text {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    background: #161b24;
+}
+
+.progress-form-input {
+    width: 90%;
+    height: 30px;
+    margin-left: 5%;
+    background: #161b24;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+::-webkit-input-placeholder {
+    /* color: #fff; */
+    font-size: 12px;
+}
+
+.progress-form-select-bottom {
+    display: flex;
+}
+
+.progress-task {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+}
+
+.progress-task p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.progress-task span {
+    width: 150px;
+    font-size: 12px;
+    margin: 10px auto;
+    display: block;
+}
+
+.progress-progress {
+    width: 85%;
+    height: 80px;
+}
+
+.progress-progress-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-percentage-number {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 10px;
+    font-weight: 600;
+}
+
+.progressbox {
+    width: 95%;
+    height: 32px;
+    position: relative;
+    border-radius: 25px;
+    background: #222;
+    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.progress-progress-progress1 {
+    width: 98%;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    left: 1%;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 15px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, #87cce0, #203461);
+    background-position: 0 0;
+    border-radius: 15px;
+    animation-name: sparkle;
+    animation-duration: 1500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.progressbox2 {
+    width: 85%;
+    height: 28px;
+    position: relative;
+    border-radius: 25px;
+    background: #222;
+    box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin-top: 5px;
+}
+
+.progress-progress-progress2 {
+    width: 98%;
+    height: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: -7px;
+    left: 1%;
+}
+
+
+.progress-form-button {
+    width: 190px;
+    height: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+.progress-form-initiate {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: rgb(51, 212, 19);
+    font-size: 17px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    z-index: 1;
+}
+
+.progress-form-initiate:hover {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2over.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: rgb(51, 212, 19);
+    font-size: 10px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    z-index: 1;
+}
+
+.progress-form-stop {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: red;
+    font-size: 17px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    position: absolute;
+    top: 46px;
+    left: -5px;
+    z-index: 1;
+}
+
+.progress-form-stop:hover {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2over.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: red;
+    font-size: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 46px;
+    left: -5px;
+    z-index: 1;
+}
+
+.progress-form-model {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    position: absolute;
+    top: 104px;
+    left: -5px;
+    z-index: 2;
+}
+
+.progress-form-model:hover {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2over.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 104px;
+    left: -5px;
+    z-index: 2;
+}
+
+.progress-form-scenario {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    position: absolute;
+    top: 163px;
+    left: -5px;
+    z-index: 3;
+}
+
+.progress-form-scenario:hover {
+    width: 100%;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2over.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -15px left 0px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 163px;
+    left: -5px;
+    z-index: 3;
+}
+
+.results {
+    width: 100%;
+    background: #161b24;
+    margin-top: 10px;
+}
+
+.results-title {
+    width: 100%;
+    height: 35px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.results-content {
+    width: 100%;
+    height: 220px;
+    display: flex;
+}
+
+.results-curve {
+    width: 20%;
+    height: 22 0px;
+}
+
+.results-curve select {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    outline: none;
+    line-height: 20px;
+    background-color: #161b24;
+    appearance: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+.results-curve select option {
+    font-size: 12px;
+}
+
+.results-dashboard {
+    width: 20%;
+    height: 220px;
+}
+
+.results-dashboard textarea {
+    color: #fff;
+    background: #161b24;
+    margin-top: 10px;
+}
+
+.results-dashboard-button {
+    width: 160px;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 140%;
+    background-position: top -7px left 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    z-index: 2;
+    margin-left: 55px;
+}
+
+.results-dashboard-button:hover {
+    width: 160px;
+    height: 50px;
+    background: #161b24;
+    background-image: url("../image/button2over.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 140%;
+    background-position: top -7px left 0px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    transition: font-size 0.2s;
+    z-index: 2;
+    margin-left: 55px;
+}
+
+.results-radar {
+    width: 20%;
+    height: 220px;
+}
+
+.results-radar-t {
+    width: 20%;
+    height: 220px;
+}
+
+.results-description {
+    width: 20%;
+    height: 220px;
+}
+
+.results-description {
+    width: 330px;
+    height: 220px;
+    text-indent: 30px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.results-description-title {
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    text-indent: 140px;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.results-description-select {
+    width: 280px;
+    height: 20px;
+    color: #ccc;
+    /*清除select聚焦时候的边框颜色*/
+    outline: none;
+    line-height: 20px;
+    background-color: #161b24;
+    appearance: none;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    z-index: 999;
+}
+
+.results-description video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}

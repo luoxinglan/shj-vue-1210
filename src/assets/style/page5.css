@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.combines {
+    width: 100%;
+    height: 100%;
+    background: #161b24;
+}
+
+.authentic {
+    width: 100%;
+    height: 250px;
+}
+
+.authentic-title {
+    width: 100%;
+    height: 50px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 14px;
+    line-height: 50px;
+    position: relative;
+}
+
+.news {
+    width: 150px;
+    height: 30px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -13px left 0px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.authentic-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.perceive-former {
+    width: 23%;
+    margin-top: 10px;
+}
+
+.perceive-former img {
+    width: 380px;
+}
+
+.perceive-former p {
+    width: 380px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.arrowhead {
+    width: 12%;
+    position: relative;
+}
+
+.arrowhead img {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+
+.arrowhead p {
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.semanteme {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+}
+
+.level {
+    position: absolute;
+    top: 95px;
+    left: -10px;
+}
+
+.perceive-after {
+    width: 23%;
+    margin-top: 10px;
+}
+
+.perceive-after img {
+    width: 380px;
+}
+
+.perceive-after p {
+    width: 380px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+.perceive {
+    width: 23%;
+    margin-top: 5px;
+}
+
+.perceive img {
+    width: 320px;
+    height: 170px;
+}
+
+.perceive p {
+    width: 320px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.found {
+    width: 23%;
+    margin-top: 10px;
+}
+
+.found img {
+    width: 380px;
+    height: 160px;
+}
+
+.found p {
+    width: 380px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.arrowhead {
+    width: 12%;
+    position: relative;
+}
+
+.arrowhead img {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+
+.arrowhead p {
+    width: 200px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.semanteme {
+    position: absolute;
+    top: 50px;
+    left: -10px;
+}
+
+.level {
+    position: absolute;
+    top: 95px;
+    left: -10px;
+}
+
+.circumvent {
+    width: 23%;
+    margin-top: 2px;
+}
+
+.circumvent video {
+    width: 380px;
+    height: 175px;
+}
+
+.circumvent p {
+    width: 380px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.control {
+    width: 23%;
+    margin-top: 5px;
+}
+
+.control img {
+    width: 320px;
+    height: 170px;
+}
+
+.control p {
+    width: 320px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.dummy {
+    width: 100%;
+    height: 250px;
+}
+
+.dummy-title {
+    width: 100%;
+    height: 50px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.dummy-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.introduce {
+    width: 100%;
+    height: 240px;
+}
+
+.introduce-title {
+    width: 100%;
+    height: 50px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 14px;
+    line-height: 50px;
+    position: relative;
+}
+
+.handoff {
+    width: 150px;
+    height: 30px;
+    background: #161b24;
+    background-image: url("../image/button2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -13px left 0px;
+    line-height: 35px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.introduce-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.introduce-content video {
+    width: 250px;
+    height: 210px;
+    margin-left: 9px;
+}
+
+.introduce-content iframe {
+    width: 250px;
+    height: 210px;
+    margin-left: 9px;
+}

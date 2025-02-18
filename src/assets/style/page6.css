@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.case {
+    width: 100%;
+    height: 100%;
+    background: #161b24;
+}
+
+.case-car {
+    width: 100%;
+    height: 380px;
+}
+
+.case-car-title {
+    width: 100%;
+    height: 50px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.case-car-content {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-car-content video {
+    width: 30%;
+    height: 100%;
+}
+
+.case-real-car {
+    width: 100%;
+    height: 380px;
+}
+
+.case-real-car-title {
+    width: 100%;
+    height: 50px;
+    background-image: url("../image/pagetitle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-indent: 30px;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.case-real-car-content {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.case-real-car-content video {
+    width: 30%;
+    height: 100%;
+}

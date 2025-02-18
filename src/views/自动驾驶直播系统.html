@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动驾驶视角</title>
+    <!-- https://bilibili.github.io/flv.js/ -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/flv.js/1.6.2/flv.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .video-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr; /* 上下两部分 */
+            grid-template-columns: 1fr 1fr 1fr; /* 三列布局 */
+            width: 100vw;
+            height: 100vh;
+            gap: 0px; /* 间距 */
+        }
+        .video-container iframe,
+        .video-container video {
+            width: 100%;  /* 设置宽度为100% */
+            height: 100%; /* 设置高度为100% */
+            object-fit: cover; /* 保持视频的比例同时填充窗口 */
+            border: 1px solid #ddd; /* 边框 */
+        }
+        #fullscreenBtn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="fullscreenBtn">全屏播放</button>
+    <div class="video-container" id="videoContainer">
+        <iframe id="camera1" allowfullscreen></iframe>
+        <iframe id="camera2" allowfullscreen></iframe>
+        <iframe id="camera3" allowfullscreen></iframe>
+        <video id="camera4" src="" muted autoplay="true" controls></video>
+        <video id="camera5" src="" muted autoplay="true" controls></video>
+        <video id="camera6" src="" muted autoplay="true" controls></video>
+    </div>
+
+    <script>
+        const accessToken = 'at.902l4mqj42jn7q4h8x0nlo4q2861gvy2-7lk228hprg-0fetgmx-xzkrqe4qu';
+        const DEVICE_SERIAL_1 = 'BD3078337';
+        const DEVICE_SERIAL_2 = 'BD3078489';
+        const DEVICE_SERIAL_3 = 'BD9472429';
+
+        // 设置视频源并自动播放
+        const setVideoSources = () => {
+            // 萤石云 iframe 视频源
+            document.getElementById('camera1').src = `https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/${DEVICE_SERIAL_1}/1.hd.live&autoplay=1&accessToken=${accessToken}`;
+            document.getElementById('camera2').src = `https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/${DEVICE_SERIAL_3}/0.hd.live&autoplay=1&accessToken=${accessToken}`;
+            document.getElementById('camera3').src = `https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/${DEVICE_SERIAL_2}/0.hd.live&autoplay=1&accessToken=${accessToken}`;
+
+            // FLV 视频源
+            const setupFlvPlayer = (videoId, flvUrl) => {
+                const videoElement = document.getElementById(videoId);
+                if (flvjs.isSupported()) {
+                    const flvPlayer = flvjs.createPlayer({
+                        type: 'flv',
+                        url: flvUrl,
+                    });
+                    flvPlayer.attachMediaElement(videoElement);
+                    flvPlayer.load();
+                    flvPlayer.play();
+                } else {
+                    console.error(`FLV.js is not supported on this browser for ${videoId}`);
+                }
+            };
+
+            setupFlvPlayer('camera4', 'http://39.106.231.250/live?port=8002&app=flv&stream=carla1');
+            setupFlvPlayer('camera5', 'http://39.106.231.250/live?port=8002&app=flv&stream=carla2');
+            setupFlvPlayer('camera6', 'http://39.106.231.250/live?port=8002&app=flv&stream=carla3');
+        };
+
+        // 页面加载时自动设置视频源
+        window.onload = setVideoSources;
+
+        // 全屏按钮事件
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        const videoContainer = document.getElementById('videoContainer');
+
+        fullscreenBtn.addEventListener('click', () => {
+            if (videoContainer.requestFullscreen) {
+                videoContainer.requestFullscreen();
+            } else if (videoContainer.mozRequestFullScreen) { // Firefox
+                videoContainer.mozRequestFullScreen();
+            } else if (videoContainer.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                videoContainer.webkitRequestFullscreen();
+            } else if (videoContainer.msRequestFullscreen) { // IE/Edge
+                videoContainer.msRequestFullscreen();
+            }
+        });
+    </script>
+</body>
+</html>
