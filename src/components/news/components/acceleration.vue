@@ -6,7 +6,6 @@
 
 <script>
 import * as echarts from "echarts";
-import data from "./get-vehicle-data-new.json";
 
 export default {
   name: "App",
@@ -16,21 +15,14 @@ export default {
       acceleration: [],
     };
   },
-  created() {
-    // this.fetchVehicleData();
-    // setInterval(this.fetchVehicleData, 1000); // 每秒更新一次数据
-    // console.log(this.vehicleData);
-    // this.acceleration = this.vehicleData.map(
-    //   (item) => item.acceleration_modulus
-    // );
-  },
+  created() {},
   computed: {},
   methods: {
     initChart() {
       const chartDom = this.$refs.chart;
       const myChart = echarts.init(chartDom);
       const option = {
-        animation:false,
+        animation: false,
         xAxis: {
           type: "category",
           // data: ["0", "10", "20", "30", "40", "50", "60","70", "80","90","100"],
@@ -62,9 +54,9 @@ export default {
             show: false,
           },
         },
-        grid:{
-          top:"20px",
-          bottom:"80px",
+        grid: {
+          top: "20px",
+          bottom: "80px",
         },
         series: [
           {
@@ -88,10 +80,7 @@ export default {
         const response = await fetch("http://localhost:8001/get-vehicle-data/");
         const data = await response.json();
         this.vehicleData = data;
-        console.log("this.vehicleData: ",this.vehicleData);
-        this.acceleration = this.vehicleData.map(
-            (item) => item.acceleration_modulus
-        );
+        this.acceleration = this.vehicleData.map((item) => item.acceleration);
         this.initChart();
       } catch (error) {
         console.error("Error fetching vehicle data:", error);

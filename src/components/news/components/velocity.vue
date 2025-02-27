@@ -6,7 +6,6 @@
 
 <script>
 import * as echarts from "echarts";
-import data from "./get-vehicle-data-new.json";
 
 export default {
   name: "App",
@@ -16,15 +15,14 @@ export default {
       velocity: [],
     };
   },
-  created() {
-  },
+  created() {},
   computed: {},
   methods: {
     initChart() {
       const chartDom = this.$refs.chart;
       const myChart = echarts.init(chartDom);
       const option = {
-        animation:false,
+        animation: false,
         xAxis: {
           type: "category",
           axisLabel: {
@@ -55,9 +53,9 @@ export default {
             show: false,
           },
         },
-        grid:{
-          top:"20px",
-          bottom:"80px",
+        grid: {
+          top: "20px",
+          bottom: "80px",
         },
         series: [
           {
@@ -81,14 +79,13 @@ export default {
         const response = await fetch("http://localhost:8001/get-vehicle-data/");
         const data = await response.json();
         this.vehicleData = data;
-        console.log("this.vehicleData in async fetchVehicleData: ", this.vehicleData);
-        this.velocity = this.vehicleData.map(
-            (item) => item.velocity_modulus
-        );
-        console.log("this.velocity in async fetchVehicleData: ", this.velocity);
+        this.velocity = this.vehicleData.map((item) => item.speed);
         this.initChart();
       } catch (error) {
-        console.error("Error fetching vehicle data in async fetchVehicleData:", error);
+        console.error(
+          "Error fetching vehicle data in async fetchVehicleData:",
+          error
+        );
       }
     },
   },
@@ -97,7 +94,7 @@ export default {
     this.fetchVehicleData();
     setInterval(this.fetchVehicleData, 100); // 每秒更新一次数据
     console.log("this.vehicleData in mounted: ", this.vehicleData);
-    console.log("this.velocity in mounted: ", this.velocity)
+    console.log("this.velocity in mounted: ", this.velocity);
   },
 };
 </script>

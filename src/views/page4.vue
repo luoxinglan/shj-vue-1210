@@ -7,17 +7,17 @@
         <div class="overview-data-content">
           <table class="overview-data-table" cellpadding="0" cellspacing="0">
             <thead>
-            <tr>
-              <th
+              <tr>
+                <th
                   class="overview-data-table-title"
                   v-for="(item, index) in tableTitle"
                   :key="index"
-              >
-                <div class="overview-data-table-title-text">
-                  {{ item }}
-                </div>
-              </th>
-            </tr>
+                >
+                  <div class="overview-data-table-title-text">
+                    {{ item }}
+                  </div>
+                </th>
+              </tr>
             </thead>
           </table>
           <div class="seamless-warp-box">
@@ -29,9 +29,9 @@
             > -->
             <ul class="table-content">
               <li
-                  v-for="(item, index) in tableData"
-                  :key="index"
-                  @click="getList(item)"
+                v-for="(item, index) in tableData"
+                :key="index"
+                @click="getList(item)"
               >
                 <span> {{ item.index }}</span>
                 <span class="outcome">{{ item.collision_rate }}</span>
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="overview-data-chart">
-          <Outcomecharts/>
+          <Outcomecharts />
         </div>
       </div>
     </div>
@@ -68,10 +68,10 @@
               <div class="progress-form-select-style">
                 <select v-model="formData.mode" name="algorithm" class="select">
                   <option
-                      v-for="(item, index) in selectData.mode"
-                      :key="index"
-                      :value="item"
-                      class="select-text"
+                    v-for="(item, index) in selectData.mode"
+                    :key="index"
+                    :value="item"
+                    class="select-text"
                   >
                     {{ item }}
                   </option>
@@ -81,15 +81,15 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">自动驾驶配置</div>
               <select
-                  v-model="formData.agent_cfg"
-                  name="scenario"
-                  class="select"
+                v-model="formData.agent_cfg"
+                name="scenario"
+                class="select"
               >
                 <option
-                    v-for="(item, index) in selectData.agent_cfg"
-                    :key="index"
-                    :value="item"
-                    class="select-text"
+                  v-for="(item, index) in selectData.agent_cfg"
+                  :key="index"
+                  :value="item"
+                  class="select-text"
                 >
                   {{ item }}
                 </option>
@@ -98,15 +98,15 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">测试算法配置</div>
               <select
-                  v-model="formData.scenario_cfg"
-                  name="scenario"
-                  class="select"
+                v-model="formData.scenario_cfg"
+                name="scenario"
+                class="select"
               >
                 <option
-                    v-for="(item, index) in selectData.scenario_cfg"
-                    :key="index"
-                    :value="item"
-                    class="select-text"
+                  v-for="(item, index) in selectData.scenario_cfg"
+                  :key="index"
+                  :value="item"
+                  class="select-text"
                 >
                   {{ item }}
                 </option>
@@ -115,15 +115,15 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">自动驾驶复训练</div>
               <select
-                  v-model="formData.continue_agent_training"
-                  name="scenario"
-                  class="select"
+                v-model="formData.continue_agent_training"
+                name="scenario"
+                class="select"
               >
                 <option
-                    v-for="(item, index) in selectData.continue_agent_training"
-                    :key="index"
-                    :value="item"
-                    class="select-text"
+                  v-for="(item, index) in selectData.continue_agent_training"
+                  :key="index"
+                  :value="item"
+                  class="select-text"
                 >
                   {{ item }}
                 </option>
@@ -132,15 +132,15 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">测试算法复训练</div>
               <select
-                  v-model="formData.continue_scenario_training"
-                  name="scenario"
-                  class="select"
+                v-model="formData.continue_scenario_training"
+                name="scenario"
+                class="select"
               >
                 <option
-                    v-for="(item, index) in selectData.continue_scenario_training"
-                    :key="index"
-                    :value="item"
-                    class="select-text"
+                  v-for="(item, index) in selectData.continue_scenario_training"
+                  :key="index"
+                  :value="item"
+                  class="select-text"
                 >
                   {{ item }}
                 </option>
@@ -149,15 +149,15 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">保存视频</div>
               <select
-                  v-model="formData.save_video"
-                  name="scenario"
-                  class="select"
+                v-model="formData.save_video"
+                name="scenario"
+                class="select"
               >
                 <option
-                    v-for="(item, index) in selectData.save_video"
-                    :key="index"
-                    :value="item"
-                    class="select-text"
+                  v-for="(item, index) in selectData.save_video"
+                  :key="index"
+                  :value="item"
+                  class="select-text"
                 >
                   {{ item }}
                 </option>
@@ -166,15 +166,15 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">记录过程数据</div>
               <select
-                  v-model="formData.process_record"
-                  name="scenario"
-                  class="select"
+                v-model="formData.process_record"
+                name="scenario"
+                class="select"
               >
                 <option
-                    v-for="(item, index) in selectData.process_record"
-                    :key="index"
-                    :value="item"
-                    class="select-text"
+                  v-for="(item, index) in selectData.process_record"
+                  :key="index"
+                  :value="item"
+                  class="select-text"
                 >
                   {{ item }}
                 </option>
@@ -183,64 +183,64 @@
             <div class="progress-form-select">
               <div class="progress-form-select-title">种子数</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.seed"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.seed"
               />
             </div>
             <div class="progress-form-select">
               <div class="progress-form-select-title">线程数</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.threads"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.threads"
               />
             </div>
             <div class="progress-form-select">
               <div class="progress-form-select-title">CARLA端口</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.port"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.port"
               />
             </div>
             <div class="progress-form-select">
               <div class="progress-form-select-title">交通仿真端口</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.tm_port"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.tm_port"
               />
             </div>
             <div class="progress-form-select">
               <div class="progress-form-select-title">固定仿真步长</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.fixed_delta_seconds"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.fixed_delta_seconds"
               />
             </div>
             <div class="progress-form-select">
               <div class="progress-form-select-title">最大执行步数</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.max_episode_step"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.max_episode_step"
               />
             </div>
             <div class="progress-form-select">
               <div class="progress-form-select-title">跳帧</div>
               <input
-                  type="text"
-                  class="progress-form-input"
-                  placeholder="请输入"
-                  v-model="formData.frame_skip"
+                type="text"
+                class="progress-form-input"
+                placeholder="请输入"
+                v-model="formData.frame_skip"
               />
             </div>
           </div>
@@ -253,9 +253,9 @@
               <div class="progress-progress-box">
                 <div class="progressbox">
                   <progress
-                      max="100"
-                      :value="progressValue"
-                      class="progress-progress-progress1"
+                    max="100"
+                    :value="progressValue"
+                    class="progress-progress-progress1"
                   ></progress>
                 </div>
                 <div class="progress-percentage-number">
@@ -265,9 +265,9 @@
               <div class="progress-progress-box">
                 <div class="progressbox2">
                   <progress
-                      max="100"
-                      :value="smallProgressValue"
-                      class="progress-progress-progress2"
+                    max="100"
+                    :value="smallProgressValue"
+                    class="progress-progress-progress2"
                   ></progress>
                 </div>
                 <div class="progress-percentage-number">
@@ -279,41 +279,41 @@
         </div>
         <div class="progress-form-button">
           <input
-              id="runButton"
-              type="button"
-              class="progress-form-initiate"
-              @click="initiate"
-              value="启动"
+            id="runButton"
+            type="button"
+            class="progress-form-initiate"
+            @click="initiate"
+            value="启动"
           />
           <input
-              type="button"
-              class="progress-form-stop"
-              value="终止"
-              @click="stop"
+            type="button"
+            class="progress-form-stop"
+            value="终止"
+            @click="stop"
           />
           <input
-              type="file"
-              id="model"
-              style="display: none"
-              @change="fileChange"
+            type="file"
+            id="model"
+            style="display: none"
+            @change="fileChange"
           />
           <input
-              type="button"
-              class="progress-form-model"
-              value="被测模型上传"
-              @click="model"
+            type="button"
+            class="progress-form-model"
+            value="被测模型上传"
+            @click="model"
           />
           <input
-              type="file"
-              id="scenario"
-              style="display: none"
-              @change="fileChange1"
+            type="file"
+            id="scenario"
+            style="display: none"
+            @change="fileChange1"
           />
           <input
-              type="button"
-              class="progress-form-scenario"
-              value="场景文件上传"
-              @click="scenario"
+            type="button"
+            class="progress-form-scenario"
+            value="场景文件上传"
+            @click="scenario"
           />
         </div>
       </form>
@@ -326,39 +326,39 @@
           <button class="results-dashboard-button">保存并展示</button>
         </div>
         <div class="results-curve">
-          <Handoff :contents="TTC_displayed"/>
+          <Handoff :contents="TTC_displayed" />
         </div>
         <div class="results-radar">
-          <Radarcharts :contents="radarchartscontent"/>
+          <Radarcharts :contents="radarchartscontent" />
         </div>
         <div class="results-radar-t">
-          <Radarchartss :contents="radarchartsscontent"/>
+          <Radarchartss :contents="radarchartsscontent" />
         </div>
         <div class="results-description">
           <div class="results-description-title">视频回放</div>
           <select
-              v-model="selectedVideo"
-              @change="selectVideo"
-              class="results-description-select"
+            v-model="selectedVideo"
+            @change="selectVideo"
+            class="results-description-select"
           >
             <option
-                v-for="(item, index) in videoList"
-                :key="index"
-                :value="item"
+              v-for="(item, index) in videoList"
+              :key="index"
+              :value="item"
             >
               {{ item.title }}
             </option>
           </select>
           <video
-              muted
-              controls
-              autoplay="autoplay"
-              loop="loop"
-              width="100%"
-              height="100%"
-              ref="videoPlayer"
+            muted
+            controls
+            autoplay="autoplay"
+            loop="loop"
+            width="100%"
+            height="100%"
+            ref="videoPlayer"
           >
-            <source :src="selectedVideo.url" type="video/mp4"/>
+            <source :src="selectedVideo.url" type="video/mp4" />
           </video>
         </div>
       </div>
@@ -393,8 +393,8 @@ function connectWebSocket(vm) {
       if (total > 0) {
         vm.progressValue = Math.round((current / total) * 100);
         console.log(
-            "Updated progress value in connectWebSocket:",
-            vm.progressValue
+          "Updated progress value in connectWebSocket:",
+          vm.progressValue
         );
 
         // 检查 progressValue 是否为 100
@@ -436,7 +436,7 @@ function connectWebSocket(vm) {
 }
 
 //生命周期函数
-import {onMounted} from "vue";
+import { onMounted } from "vue";
 import "../assets/style/page4.css";
 import Outcomecharts from "../components/outcome/outcome.vue";
 import Curvecharts from "../components/curve/curve.vue";
@@ -1192,18 +1192,18 @@ export default {
         },
         body: JSON.stringify(this.formData),
       })
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error("网络响应异常");
-            }
-            // 注意：这里不需要返回 response.json()，因为后端应该直接通过 WebSocket 发送输出
-            return;
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            isScriptRunning = false;
-            button.disabled = false;
-          });
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("网络响应异常");
+          }
+          // 注意：这里不需要返回 response.json()，因为后端应该直接通过 WebSocket 发送输出
+          return;
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          isScriptRunning = false;
+          button.disabled = false;
+        });
     },
     // 终止点击事件
     stop() {
@@ -1268,7 +1268,7 @@ export default {
     // 切换视频
     selectVideo() {
       const selectedVideo = this.videoList.find(
-          (video) => video.id === this.selectedVideo.id
+        (video) => video.id === this.selectedVideo.id
       );
       if (selectedVideo) {
         this.selectedVideo = selectedVideo;
@@ -1278,13 +1278,13 @@ export default {
     },
     fetchMetrics() {
       axios
-          .get("api/metrics")
-          .then((response) => {
-            this.tableData = response.data;
-          })
-          .catch((error) => {
-            console.error("Error fetching metrics:", error);
-          });
+        .get("api/metrics")
+        .then((response) => {
+          this.tableData = response.data;
+        })
+        .catch((error) => {
+          console.error("Error fetching metrics:", error);
+        });
     },
 
     // TODO：checkAndInsertMetrics插入2024.UPDATE12.16
@@ -1295,19 +1295,19 @@ export default {
           "Content-Type": "application/json",
         },
       })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(
-                "Check and Insert Response in checkAndInsertMetrics:",
-                data
-            );
-          })
-          .catch((error) => {
-            console.error(
-                "Error checking and inserting metrics in checkAndInsertMetrics:",
-                error
-            );
-          });
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(
+            "Check and Insert Response in checkAndInsertMetrics:",
+            data
+          );
+        })
+        .catch((error) => {
+          console.error(
+            "Error checking and inserting metrics in checkAndInsertMetrics:",
+            error
+          );
+        });
     },
 
     // TODO：UPDATE12.20:checkAndInsertTTC插入
@@ -1318,16 +1318,16 @@ export default {
           "Content-Type": "application/json",
         },
       })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Check and Insert Response in checkAndInsertTTC:", data);
-          })
-          .catch((error) => {
-            console.error(
-                "Error checking and inserting metrics in checkAndInsertTTC:",
-                error
-            );
-          });
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Check and Insert Response in checkAndInsertTTC:", data);
+        })
+        .catch((error) => {
+          console.error(
+            "Error checking and inserting metrics in checkAndInsertTTC:",
+            error
+          );
+        });
     },
 
     //TODO：UPDATE1226：替换TTC数据
@@ -1337,20 +1337,20 @@ export default {
         const response = await axios.get(`api/ttc/${metricId}`);
         // this.TTC_displayed = response.data;
         this.TTC_displayed = this.cutTTCData(metric, response.data);
-        console.log('Fetched data in fetchTTCData:', this.TTC_displayed); // 调试信息
+        console.log("Fetched data in fetchTTCData:", this.TTC_displayed); // 调试信息
       } catch (error) {
-        console.error('Error fetching data in fetchTTCData:', error);
+        console.error("Error fetching data in fetchTTCData:", error);
       }
     },
 
     //TODO：UPDATE1227：修改TTC格式（其实可以在后端弄）
     cutTTCData(metric, TTC_to_process) {
-      console.log('metric in cutTTCData:', metric); // 调试信息
-      console.log('TTC_to_process in cutTTCData:', TTC_to_process); // 调试信息
+      console.log("metric in cutTTCData:", metric); // 调试信息
+      console.log("TTC_to_process in cutTTCData:", TTC_to_process); // 调试信息
 
       // 检查 TTC_to_process 是否为对象
-      if (typeof TTC_to_process !== 'object' || TTC_to_process === null) {
-        console.error('TTC_to_process is not an object:', TTC_to_process);
+      if (typeof TTC_to_process !== "object" || TTC_to_process === null) {
+        console.error("TTC_to_process is not an object:", TTC_to_process);
         return {};
       }
 
@@ -1370,20 +1370,28 @@ export default {
               // 将处理后的数组存入新对象
               TTC_processed[key] = parsedArray;
             } catch (error) {
-              console.error('Failed to parse JSON for key:', key, 'Error:', error);
+              console.error(
+                "Failed to parse JSON for key:",
+                key,
+                "Error:",
+                error
+              );
               TTC_processed[key] = TTC_to_process[key]; // 如果解析失败，保留原始值
             }
           } else {
             // 如果不是 TTC 开头的键，则直接复制其值
             TTC_processed[key] = TTC_to_process[key];
-            console.log(`Copied non-TTC key ${key} with value:`, TTC_to_process[key]); // 调试信息
+            console.log(
+              `Copied non-TTC key ${key} with value:`,
+              TTC_to_process[key]
+            ); // 调试信息
           }
         }
       }
 
-      console.log('Processed TTC data:', TTC_processed); // 调试信息
+      console.log("Processed TTC data:", TTC_processed); // 调试信息
       return TTC_processed;
-    }
+    },
   },
   mounted() {
     // TODO:UPDATE12.16插入metrics

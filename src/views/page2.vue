@@ -1657,20 +1657,7 @@ export default {
     Echarts2,
     Echarts4,
   },
-  computed: {
-    /*  optionHover() {
-      return {
-        hoverStop: true, // 是否开启鼠标悬停stop
-        direction: 1, // 0向下 1向上 2向左 3向右
-        step: 1, // 数值越大速度滚动越快
-        openWatch: true, // 开启数据实时监控刷新dom
-        limitMoveNum: 5, //开始滚动的数据量
-        singleHeight: 30, //单步运动停止的高度(默认值0是无缝不停止的滚动) direction => 0/1
-        singleWidth: 105, //单步运动停止的宽度(默认值0是无缝不停止的滚动) direction => 2/3
-        waitTime: 1000, //单步运动停止的时间(默认值1000ms)
-      };
-    }, */
-  },
+  computed: {},
   methods: {
     progressStart() {
       this.progressText = "进度条：测试中";
@@ -1679,6 +1666,7 @@ export default {
         if (this.progressValue > 99) {
           clearInterval(timer);
           this.progressText = "进度条：本轮测试完成";
+          this.progressValue = 100;
         }
       }, 500);
     },
